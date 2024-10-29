@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    /* background-color:lightsalmon */
+}
+.btn1,.btn2,.btn3,.btn4{
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    background-color: aqua;
+ } 
+ img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    transition: 4s;
+ }
+
+.btn1:hover~img{ 
+    transform: rotate(180deg);
+   }
+   .btn2:hover~img{
+    transform: rotateY(270deg);
+   }
+   .btn3:hover~img{
+    transform: rotateX(180deg);
+   }
+   .btn4:hover~img{
+    transform: rotateX(90deg);
+    transform: rotateY(90deg);
+   }
